@@ -27,9 +27,7 @@ for line in lines:
     position = input[1] - 1
     destination = input[2] - 1
 
-    items = []
-    for i in range(amount):
-        items.append(queues[position].get())
+    items = [queues[position].get() for _ in range(amount)]
 
     for i in reversed(items):
         queues[destination].put(i)
