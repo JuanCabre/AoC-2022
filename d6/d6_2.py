@@ -1,8 +1,5 @@
-
 f = open("d6_1.txt", "r")
-
 lines = f.readlines()
-
 input = lines[0]
 
 for i in range(len(input)):
