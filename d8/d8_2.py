@@ -12,7 +12,6 @@ for line in lines:
 
 input = np.array(input, np.int32)
 rowCount, columnCount = input.shape
-print(input.shape)
 
 def scoreCalculator(serie, h):
     visibles = 0

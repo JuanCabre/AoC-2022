@@ -12,16 +12,6 @@ for line in lines:
 
 input = np.array(input, np.int32)
 rowCount, columnCount = input.shape
-print(input.shape)
-
-def countVisible(serie):
-    h = -1
-    visible = 0
-    for s in serie:
-        if s > h:
-            visible += 1
-            h = s
-    return visible
 
 def isHigher(serie, h):
     for s in serie:
