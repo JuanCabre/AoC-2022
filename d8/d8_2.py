@@ -28,13 +28,13 @@ for y in range(rowCount):
         score = 1
 
         h = input[y,x]
-        # # Go right
+        # Go right
         score *= scoreCalculator(input[y,x+1:],h)
         # Go left
         score *= scoreCalculator(np.flipud(input[y,:x]),h)
-        # # Go bottom
+        # Go bottom
         score *= scoreCalculator(input[y+1:,x],h)
-        # # Go top
+        # Go top
         score *= scoreCalculator(np.flipud(input[:y,x]),h)
 
         scores.append(score)
